@@ -1,0 +1,97 @@
+@import "tailwindcss";
+
+@theme {
+  --color-primary: #00f0ff;
+  --color-accent: #8A2BE2; /* Electric Violet */
+  --color-bg-dark: #02040A;
+  --color-text-main: #e2e8f0;
+  --color-text-muted: #94a3b8;
+}
+
+@layer base {
+  html {
+    scroll-behavior: smooth;
+    font-family: 'Inter', sans-serif;
+    --global-hue: 0deg;
+    filter: hue-rotate(var(--global-hue));
+    transition: filter 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  /* Prevent images from being color shifted */
+  img, video {
+    filter: hue-rotate(calc(var(--global-hue) * -1));
+    transition: filter 0.8s cubic-bezier(0.4, 0, 0.2, 1);
+  }
+
+  h1, h2, h3, h4, h5, h6, .display-font {
+    font-family: 'Outfit', sans-serif;
+  }
+  
+  .code-font {
+    font-family: 'JetBrains Mono', monospace;
+  }
+
+  body {
+    @apply bg-[#02040A] text-slate-200 antialiased relative overflow-x-hidden selection:bg-[#00f0ff] selection:text-black;
+  }
+
+  ::-webkit-scrollbar {
+    width: 8px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #02040A;
+  }
+  ::-webkit-scrollbar-thumb {
+    @apply bg-slate-800 rounded-full;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    @apply bg-[#00f0ff]/50;
+  }
+}
+
+@layer utilities {
+  .glass-panel {
+    @apply bg-[#0f172a]/40 backdrop-blur-md border border-slate-700/50 shadow-lg rounded-3xl transition-all duration-300;
+  }
+  
+  .glass-panel:hover {
+    @apply border-[#00f0ff]/50 shadow-[0_8px_20px_0_rgba(0,240,255,0.1)] -translate-y-2;
+  }
+
+  .text-glow {
+    text-shadow: 0 0 10px rgba(0, 240, 255, 0.4);
+  }
+  
+  .violet-glow {
+    text-shadow: 0 0 10px rgba(138, 43, 226, 0.4);
+  }
+
+  .holographic-border {
+    position: relative;
+  }
+  
+  .holographic-border::before {
+    content: '';
+    position: absolute;
+    inset: -2px;
+    border-radius: inherit;
+    background: linear-gradient(45deg, #00f0ff, transparent 40%, #8A2BE2);
+    z-index: -1;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    padding: 2px;
+    -webkit-mask: linear-gradient(#fff 0 0) content-box, linear-gradient(#fff 0 0);
+    -webkit-mask-composite: xor;
+    mask-composite: exclude;
+  }
+  
+  .holographic-border:hover::before {
+    opacity: 1;
+    animation: rotate-gradient 3s linear infinite;
+  }
+  
+  @keyframes rotate-gradient {
+    0% { filter: hue-rotate(0deg); }
+    100% { filter: hue-rotate(360deg); }
+  }
+}
