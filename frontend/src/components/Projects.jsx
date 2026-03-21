@@ -15,6 +15,16 @@ const Projects = () => {
       image: "/leavify-full.png"
     },
     {
+      title: "Finora",
+      subtitle: "Personal Finance Tracking Application",
+      duration: "Jan 2026 - Feb 2026",
+      description: "Engineered a full-stack personal finance tracking application using React (Vite) and Firebase, enabling users to manage income, expenses, and financial records with real-time cloud synchronization. Implemented secure authentication using Google OAuth and email/password login, while managing global application state for transactions, notifications, and user preferences through React Context API. Built interactive analytics dashboards with categorized transaction history, dynamic charts, and responsive light/dark mode.",
+      tech: ["React", "Vite", "Firebase", "Cloud Firestore", "Chart.js", "Vanilla CSS"],
+      github: "https://github.com/atharavtyagi/finora",
+      live: "https://finoraa.vercel.app/",
+      image: "/finora.png"
+    },
+    {
       title: "Fuel Sync",
       subtitle: "Loyalty Operations Interface",
       duration: "Oct 2025 - Dec 2025",
@@ -31,7 +41,8 @@ const Projects = () => {
       description: "A robust billing and reporting manager that auto-generates exact digital invoices. Features advanced synchronized logic to manage complex transaction pools and deliver PDFs instantly.",
       tech: ["PHP", "MySQL", "JavaScript", "Bootstrap"],
       github: "https://github.com/atharavtyagi/Petrofy",
-      live: "https://petrofy.netlify.app"
+      live: "https://petrofy.netlify.app",
+      image: "/petrofy.png"
     },
     {
       title: "Poll Sys",
@@ -40,7 +51,8 @@ const Projects = () => {
       description: "A highly responsive, state-driven polling application offering instant aggregated feedback. Engineered utilizing rapid bundling to serve dynamic client experiences backed by a node framework.",
       tech: ["React", "Vite", "Node.js", "Tailwind"],
       github: "https://github.com/atharavtyagi/poll",
-      live: "https://polll.netlify.app"
+      live: "https://polll.netlify.app",
+      image: "/poll.png"
     }
   ];
 

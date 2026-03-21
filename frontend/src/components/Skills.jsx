@@ -3,10 +3,10 @@ import { motion } from 'framer-motion';
 
 const Skills = () => {
   const categories = [
-    { title: "Languages", icon: "01", skills: ["Python", "C++", "JavaScript", "TypeScript", "PHP", "Java"] },
-    { title: "Frontend", icon: "02", skills: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "Zustand"] },
-    { title: "Backend", icon: "03", skills: ["Node.js", "Express", "REST APIs", "GraphQL"] },
-    { title: "Database", icon: "04", skills: ["MongoDB", "MySQL", "Docker", "AWS", "Git"] }
+    { title: "Languages", skills: ["Python", "C++", "JavaScript", "TypeScript", "PHP", "Java"] },
+    { title: "Frontend", skills: ["React", "Next.js", "Tailwind CSS", "Framer Motion", "Zustand"] },
+    { title: "Backend", skills: ["Node.js", "Express", "REST APIs", "GraphQL"] },
+    { title: "Database", skills: ["MongoDB", "MySQL", "Docker", "AWS", "Git"] }
   ];
 
   return (
@@ -35,9 +35,9 @@ const Skills = () => {
               transition={{ duration: 0.5, delay: idx * 0.1 }}
               className="glass-panel p-8 holographic-border group flex flex-col items-center text-center relative"
             >
-              <div className="absolute top-4 left-4 text-slate-700 code-font text-xs font-bold transition-colors group-hover:text-[#00f0ff]">
+              {/* <div className="absolute top-4 left-4 text-slate-700 code-font text-xs font-bold transition-colors group-hover:text-[#00f0ff]">
                 [{cat.icon}]
-              </div>
+              </div> */}
 
               <h3 className="text-xl font-bold display-font mb-8 text-white uppercase tracking-widest mt-6">
                 {cat.title}

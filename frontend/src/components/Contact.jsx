@@ -78,7 +78,7 @@ const Contact = () => {
               <div>
                 <span className="code-font text-xs text-slate-500 uppercase tracking-widest block mb-1">Phone:</span>
                 <a href="tel:+918171498090" className="text-xl md:text-2xl text-[#8A2BE2] font-bold hover:text-white transition-all display-font violet-glow">
-                  +91 8171 498 090
+                  +91 81714 98090
                 </a>
               </div>
             </div>

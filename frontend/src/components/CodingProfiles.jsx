@@ -6,18 +6,18 @@ const CodingProfiles = () => {
   const profiles = [
     {
       platform: "LeetCode",
-      username: "atharavtyagi",
-      solved: "100+",
-      link: "#",
+      username: "tyagiatharav9999",
+      solved: "50+",
+      link: "https://leetcode.com/u/tyagiatharav9999/",
       metric: "Problems",
       color: "from-[#00f0ff] to-transparent",
       accent: "text-[#00f0ff]"
     },
     {
       platform: "HackerRank",
-      username: "atharav",
+      username: "/tyagiatharav9999",
       solved: "5 Star",
-      link: "#",
+      link: "https://www.hackerrank.com/profile/tyagiatharav9999",
       metric: "Rank",
       color: "from-[#8A2BE2] to-transparent",
       accent: "text-[#8A2BE2]"
