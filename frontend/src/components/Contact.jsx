@@ -10,7 +10,7 @@ const Contact = () => {
     e.preventDefault();
     setStatus('loading');
     try {
-      const response = await fetch('https://formspree.io/f/xwvrzqrz', {
+      const response = await fetch('https://portfolio-u7xw.onrender.com/api/contact', {
         method: 'POST',
         headers: {
           'Accept': 'application/json',

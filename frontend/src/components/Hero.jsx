@@ -90,7 +90,7 @@ const Hero = () => {
               View Projects
             </button>
             <button
-              onClick={() => window.open('/resume.pdf', '_blank')}
+              onClick={() => window.open('https://portfolio-u7xw.onrender.com/api/resume/download', '_blank')}
               className="px-10 py-5 bg-transparent border-2 border-slate-700 text-slate-300 font-bold display-font uppercase tracking-widest rounded-xl hover:border-[#00f0ff] hover:text-[#00f0ff] transition-all hover:bg-[#00f0ff]/10 w-full sm:w-auto text-center"
             >
               Download CV
