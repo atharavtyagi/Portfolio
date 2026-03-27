@@ -7,19 +7,19 @@ const Education = () => {
       institution: "Lovely Professional University",
       degree: "B.Tech Computer Science",
       duration: "2023 // Present",
-      grade: "CGPA: 6.5",
+      // grade: "CGPA: 6.5",
     },
     {
       institution: "SD Public School",
       degree: "Intermediate",
       duration: "2022 // 2023",
-      grade: "73%",
+      // grade: "73%",
     },
     {
       institution: "SD Public School",
       degree: "Matriculation",
       duration: "2020 // 2021",
-      grade: "93%",
+      // grade: "93%",
     }
   ];
 
