@@ -70,11 +70,11 @@ const Education = () => {
                     <p className="text-slate-400 font-sans text-lg">{edu.institution}</p>
                   </div>
 
-                  <div>
+                  {/* <div>
                     <span className="code-font text-[#8A2BE2] bg-[#8A2BE2]/10 border border-[#8A2BE2]/30 px-4 py-2 text-sm font-bold shadow-[0_0_10px_rgba(138,43,226,0.2)] block">
                       {edu.grade}
                     </span>
-                  </div>
+                  </div> */}
                 </div>
               </div>
             </motion.div>
