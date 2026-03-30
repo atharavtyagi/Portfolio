@@ -119,7 +119,7 @@ const Hero = () => {
             />
             <div className="absolute inset-12 bg-gradient-to-br from-[#00f0ff]/20 to-[#8A2BE2]/20 rounded-full blur-2xl" />
             <div className="absolute inset-0 flex items-center justify-center">
-              <img src={profileImg} alt="Atharav Tyagi" className="w-56 h-56 object-cover object-top rounded-full border-4 border-[#00f0ff]/30 shadow-[0_0_30px_rgba(0,240,255,0.4)] pointer-events-auto hover:scale-105 transition-transform duration-500" />
+              {/* <img src={profileImg} alt="Atharav Tyagi" className="w-56 h-56 object-cover object-top rounded-full border-4 border-[#00f0ff]/30 shadow-[0_0_30px_rgba(0,240,255,0.4)] pointer-events-auto hover:scale-105 transition-transform duration-500" /> */}
             </div>
           </div>
         </motion.div>
